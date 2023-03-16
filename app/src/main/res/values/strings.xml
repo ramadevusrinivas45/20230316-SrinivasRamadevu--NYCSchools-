@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NYC Schools</string>
+    <string name="title_list_empty">No data found</string>
+    <string name="message_list_empty">Please try again</string>
+
+    <string name="title_school_list">NYC Schools</string>
+    <string name="title_school_details">School Details</string>
+    <string name="num_of_sat_test_takers">Test Takers: %s</string>
+    <string name="reading_avg_score">Reading Avg Score: %s</string>
+    <string name="math_avg_score">Maths Avg Score: %s</string>
+    <string name="writing_avg_score">Writing Avg Score: %s</string>
+    <string name="location">Location: %s</string>
+</resources>

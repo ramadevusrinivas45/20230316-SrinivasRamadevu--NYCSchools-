@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/schoolsListFragment"
+    android:id="@+id/app_navigation">
+    <fragment android:id="@+id/schoolsListFragment"
+        android:name="com.jpmc.nycschools.ui.SchoolsListFragment"
+        android:label="schoolsListFragment"
+        tools:layout="@layout/fragment_schools_list">
+        <action android:id="@+id/action_SchoolsListFragment_to_schoolDetailsFragment"
+            app:destination="@id/schoolDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"/>
+    </fragment>
+
+    <dialog android:id="@+id/schoolDetailsFragment"
+        android:name="com.jpmc.nycschools.ui.SchoolDetailsFragment"
+        android:label="schoolDetailsFragment"
+        tools:layout="@layout/fragment_school_details">
+        <argument android:name="model"
+            app:argType="com.jpmc.nycschools.data.SchoolModel"/>
+    </dialog>
+</navigation>
